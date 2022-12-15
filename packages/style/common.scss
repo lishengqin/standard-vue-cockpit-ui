@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+.ellipsis {
+  overflow: hidden;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

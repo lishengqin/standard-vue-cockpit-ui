@@ -1,0 +1,15 @@
+.lsq-scroll-list {
+  height: 100%;
+  background:#062152;
+  overflow: hidden;
+  color: #fff;
+  .lsq-list {
+    position: relative;
+    transition: all 0.00001s ease;
+    max-height: 100%;
+    .lsq-empty {
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+}
