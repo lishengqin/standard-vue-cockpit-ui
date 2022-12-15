@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "target": "ES2015",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "declaration": true,
+    "declarationDir": "types",
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "lib": ["esnext", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@packages/*": ["packages/*"]
+    },
+    "skipLibCheck": true,
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+  },
+  "exclude": [
+    "config",
+    "node_modules",
+    "types",
+    "lib",
+    "src",
+    "script",
+    "dist",
+    "public"
+  ]
+}

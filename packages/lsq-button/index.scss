@@ -1,0 +1,27 @@
+.lsq-button {
+  cursor: pointer;
+  &.lsq_button_primary {
+    min-width: 84px;
+    background: url('./assets/btnBac.png') no-repeat;
+    background-size: 100% 100%;
+    display: inline-flex;
+    height: 36px;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  &.lsq_button_text {
+    display: inline-block;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    line-height: 22px;
+    &.lsq_button_text_border {
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+  }
+  + .lsq-button {
+    margin-left: 16px;
+  }
+}
