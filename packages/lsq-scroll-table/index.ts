@@ -1,6 +1,6 @@
 import { withInstall } from "../withInstall";
 import _LsqSrcollTable from "./LsqScrollTable";
-
+/* 列配置 */
 export type Column = {
   /** 列表头标签 */
   label: string,

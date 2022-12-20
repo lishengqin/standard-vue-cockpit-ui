@@ -11,11 +11,11 @@ export const lsqScrollListProps = {
   /** 滚动速度*/
   step: {
     default: 0.5,
-    type: [Number],
+    type: Number,
   },
   /** 复制的份数，只有列表滚动起来了才会进行复制*/
   copyNum: {
-    type: [Number],
+    type: Number,
     default: 1,
   },
   /** 是否进行滚动*/
@@ -73,7 +73,7 @@ export default defineComponent({
       start();
     };
     // 支持鼠标手动滚动列表
-    const mousewheel = (e)=> {
+    const mousewheel = (e) => {
       let count = 10;
       let subH = instance.refs.listWrapRef.scrollHeight - instance.refs.listWrapRef.offsetHeight;
       if (subH <= 0) return;

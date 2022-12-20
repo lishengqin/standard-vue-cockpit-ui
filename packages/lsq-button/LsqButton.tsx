@@ -2,7 +2,7 @@ import { defineComponent, PropType } from "vue";
 import { ButtonType } from "./index"
 import "./index.scss"
 export const lsqButtonProps = {
-  /* 按钮类型 */
+  /** 按钮类型 */
   type: {
     type: String as PropType<ButtonType>,
     default: "primary",
@@ -10,7 +10,7 @@ export const lsqButtonProps = {
       return ["primary", "text"].includes(value)
     }
   },
-  /* 文字颜色 */
+  /** 文字颜色 */
   color: {
     type: String,
     default: "fff"
@@ -21,11 +21,11 @@ export const lsqButtonProps = {
   }
 }
 export const lsqButtonEmits = {
-  /* 点击触发 */
+  /** 点击触发 */
   click: () => { }
 }
 export const lsqButtonSlots = {
-  /* 自定义按钮文字插槽 */
+  /** 自定义按钮文字插槽 */
   default: () => true
 }
 export default defineComponent({
