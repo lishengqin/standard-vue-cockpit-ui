@@ -13,7 +13,7 @@ export const lsqButtonProps = {
   /** 文字颜色 */
   color: {
     type: String,
-    default: "fff"
+    default: "#fff"
   },
   bottomLine: {
     type: Boolean,
