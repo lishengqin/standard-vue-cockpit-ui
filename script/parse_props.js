@@ -16,12 +16,12 @@ function getTypeValue(node) {
     if (!_node.type.types) {
       return {
         name: typeName,
-        value: null,
+        value: [_node.type.typeName?.escapedText].filter(one => !!one),
       };
     }
     let values = [];
     _node.type.types.forEach(one => {
-      values.push(one.literal.text);
+      values.push(one.literal?.text || one.typeName?.escapedText);
     });
     return {
       name: typeName,
@@ -112,24 +112,23 @@ export function extractFileProps(file) {
     /* 解析index定义的格式 */
     if (node.moduleSpecifier && node.moduleSpecifier.text === './index') {
       let importText = node.moduleSpecifier.text;
-      if (importText === './index') {
-        let childFile = path.resolve(file, '../' + importText + '.ts');
-        const programChild = ts.createProgram([childFile], { allowJs: true });
-        const sourceFileChild = programChild.getSourceFile(childFile);
-        ts.forEachChild(sourceFileChild, childNode => {
-          if (ts.isTypeAliasDeclaration(childNode)) {
-            let typeName = childNode.name.escapedText;
-            let value = getTypeValue(childNode);
-            if (!Array.isArray(value)) {
-              value = [value];
-            }
-            props.other.push({
-              name: typeName,
-              value: value,
-            });
+
+      let childFile = path.resolve(file, '../' + importText + '.ts');
+      const programChild = ts.createProgram([childFile], { allowJs: true });
+      const sourceFileChild = programChild.getSourceFile(childFile);
+      ts.forEachChild(sourceFileChild, childNode => {
+        if (ts.isTypeAliasDeclaration(childNode)) {
+          let typeName = childNode.name.escapedText;
+          let value = getTypeValue(childNode);
+          if (!Array.isArray(value)) {
+            value = [value];
           }
-        });
-      }
+          props.other.push({
+            name: typeName,
+            value: value,
+          });
+        }
+      });
     } else {
       /* 解析本文的props等 */
       pushProps(node, props, sourceFile);
