@@ -29,6 +29,7 @@
     "chalk": "^5.2.0",
     "clipboard": "^2.0.11",
     "github-markdown-css": "^5.1.0",
+    "highlight.js": "^11.7.0",
     "inquirer": "^9.1.4",
     "lodash": "^4.17.21",
     "naive-ui": "^2.34.2",

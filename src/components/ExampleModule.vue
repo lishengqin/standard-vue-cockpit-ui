@@ -10,7 +10,11 @@
       </span>
     </div>
     <template v-if="showExampleSource">
-      <div class="example-source">{{ comStr }}</div>
+      <div class="example-source" v-highlight>
+        <pre>
+          <code>{{ comStr }}</code>
+        </pre>
+      </div>
       <div class="example-float-control" @click="changeShowExampleSource">隐藏源代码</div>
     </template>
   </div>
@@ -71,6 +75,16 @@ const changeShowExampleSource = () => {
     padding: 16px;
     white-space: pre;
     background: #262727;
+    pre {
+      background: transparent;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      code {
+        padding: 0;
+      }
+    }
   }
   .example-float-control {
     position: sticky;
