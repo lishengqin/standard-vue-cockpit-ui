@@ -1,0 +1,14 @@
+.lsq-module-block {
+  padding: 10px;
+  background: #062152;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  .lsq-module-title {
+    margin-bottom: 10px;
+  }
+  .lsq-module-content {
+    // padding: 0px 10px 0;
+    flex: 1;
+  }
+}

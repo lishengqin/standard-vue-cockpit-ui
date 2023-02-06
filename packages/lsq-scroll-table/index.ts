@@ -1,6 +1,6 @@
 import { withInstall } from "../withInstall";
-import _LsqSrcollTable from "./LsqScrollTable";
-/* 列配置 */
+import _lsqSrcollTable from "./LsqScrollTable";
+
 export type Column = {
   /** 列表头标签 */
   label: string,
@@ -19,7 +19,7 @@ export type ListOfItem = {
   /** 当前行的类名 */
   className?: string,
 }
-export const LsqScrollTable = withInstall(_LsqSrcollTable)
+export const LsqScrollTable = withInstall(_lsqSrcollTable)
 export default LsqScrollTable;
 declare module "vue" {
   export interface GlobalComponents {

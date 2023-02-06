@@ -12,5 +12,5 @@
 
 更多用法，可以修改滚动速度，或者设置不滚动。
 
- <!-- <ExampleModule fileName="more"/> -->
+<ExampleModule fileName="more"/>
 <PropsRenderDoc />

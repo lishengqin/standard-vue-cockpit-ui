@@ -8,7 +8,11 @@
 <script setup>
 import layout from './layout';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { debounce } from 'lodash';
+import { usePageScale } from '@packages/index';
 const myRef = ref('');
-onMounted(() => {});
+onMounted(() => {
+  usePageScale(myRef.value);
+});
 </script>
 <style lang="scss" scoped></style>

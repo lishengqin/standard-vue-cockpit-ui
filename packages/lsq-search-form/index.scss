@@ -1,0 +1,27 @@
+.lsq-search-form {
+  .searchFormItem {
+    display: flex;
+    align-items: center;
+    .label {
+      font-size: 16px;
+      font-family: MicrosoftYaHei;
+      color: #ffffff;
+      text-align: right;
+    }
+    &.mt-16 {
+      margin-top: 16px;
+    }
+    &.searchFormItem_required {
+      .label {
+        &:before {
+          content: '*';
+          color: #e71a19;
+          margin-right: 4px;
+          font-size: 16px;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+}

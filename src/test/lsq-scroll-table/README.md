@@ -13,5 +13,5 @@
 更多用法，可以通过当前列的 `prop` 作为当前单元格的插槽，插槽有提供 `row` `index` `column`;
 同时还可以根据当前的业务场景，传属性控制样式，比如这列的宽度、文字对齐方式、表头文字可以换行等等；
 
-<!-- <ExampleModule fileName="more"/>-->
+<ExampleModule fileName="more"/>
 <PropsRenderDoc />

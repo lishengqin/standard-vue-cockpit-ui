@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router"
 import componentConfigs from "./utils/getComponentsConfig";
 import { definition } from "@packages/commonTypes"
-let comChildren = componentConfigs.map((item: definition) => {
+let comChildren = (componentConfigs).map((item: definition) => {
+  console.log(item.name, item.state)
   return {
     name: item.name,
     path: `${item.name}`,
@@ -21,7 +22,18 @@ const routes = [
     // @ts-ignore
     component: () => import("./doc"),
     children: [
+      {
+        name: "hook",
+        path: `hook`,
+        component: () => import("@/views/hook/README.md")
+      },
+      {
+        name: "quickstart",
+        path: `quickstart`,
+        component: () => import("@/views/quickstart/README.md")
+      },
       ...comChildren,
+
     ]
   }
 ]

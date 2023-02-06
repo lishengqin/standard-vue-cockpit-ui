@@ -1,0 +1,87 @@
+.lsq-pie-chart {
+  position: relative;
+  // overflow: hidden; // 因为视频会超出区域，挡住其他元素
+  .chart {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .video-wrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%) scale(1.1);
+      mix-blend-mode: screen;
+      &.ring-effect {
+        left: 20%;
+      }
+    }
+  }
+
+  .legend-wrap {
+    max-height: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    row-gap: 10px;
+    &.legend-wrap_morerow {
+      left: 35%;
+      width: 65%;
+    }
+    .legend-row {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+    }
+    .legend {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      font-family: MicrosoftYaHei;
+      .rect {
+        width: 13px;
+        height: 13px;
+        background: #fff;
+      }
+      .name {
+        width: 120px;
+        margin-left: 8px;
+        margin-right: 6px;
+        color: #bae1fe;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        &.name_wrap {
+          white-space: normal;
+        }
+      }
+      .value {
+        color: #b9e1ff;
+        &::before {
+          margin-right: 10px;
+          content: '';
+          display: inline-block;
+          height: 9px;
+          width: 1px;
+          background: #b9e1ff;
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,22 @@ export const lsqScrollTableProps = {
   /** 表格的列配置 */
   columns: {
     type: Array as PropType<Column[]>,
-    default: []
+    default: [
+      // {
+      // /** 列表头标签 */
+      // label: string,
+      // /** 列的类型，index表示该列为序号 */
+      // type ?: 'index' | "",
+      // /**  该列的字段 */
+      // prop: string,
+      // /**  该列的宽度 */
+      // width ?: string,
+      // /** 该列的表头对齐方式 */
+      // headAlign ?: 'left' | "center" | "right",
+      // /** 该列的内容对齐方式 */
+      // align ?: 'left' | "center" | "right"
+      // }
+    ]
   },
   /** 表头和文字的对齐方式 left cengter right */
   align: {
@@ -33,15 +48,13 @@ export const lsqScrollTableProps = {
   /** 数组数据 */
   list: {
     type: Array as PropType<ListOfItem[]>,
-    default: []
+    default: [
+      // {
+      //   /** 当前行的类名 */
+      //   className?: string,
+      // }
+    ]
   },
-  /** 获取东西  */
-  getSomeThing: {
-    default: () => {
-      return {}
-    },
-    type: Function
-  }
 }
 export const lsqScrollTableEmits = {
   /** 点击列表行触发 (row)=>{}*/

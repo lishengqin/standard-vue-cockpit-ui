@@ -36,7 +36,7 @@ function getTypeValue(node) {
       node.type.members.forEach(one => {
         let dataOne = {
           name: one.name.escapedText,
-          comment: one.jsDoc[0].comment,
+          comment: one.jsDoc && one.jsDoc[0].comment,
           value: singleMap(one).value,
         };
         data.push(dataOne);

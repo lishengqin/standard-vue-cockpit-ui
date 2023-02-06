@@ -8,11 +8,13 @@ const list = [
 ];
 </script>
 <template>
-  <LsqScrollList :list="list" style="height: 200px">
-    <div class="item" v-for="(item, index) in list" :key="index">
-      {{ item.name }}
-    </div>
-  </LsqScrollList>
+  <LsqModuleBlock title="滚动列表">
+    <LsqScrollList :list="list" style="height: 200px">
+      <div class="item" v-for="(item, index) in list" :key="index">
+        {{ item.name }}
+      </div>
+    </LsqScrollList>
+  </LsqModuleBlock>
 </template>
 <style scoped>
 .item {

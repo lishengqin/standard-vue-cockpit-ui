@@ -1,0 +1,26 @@
+.lsq-module-title {
+  height: 46px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  background: url('./assets//titleBac.png') no-repeat;
+  background-size: 100% 100%;
+
+  .left-wrap {
+    display: flex;
+    .title {
+      margin-left: 16px;
+      font-size: 20px;
+      font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .right-wrap {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

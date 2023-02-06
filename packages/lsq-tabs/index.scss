@@ -1,0 +1,67 @@
+.lsq-tabs {
+  display: inline-flex;
+
+  .lsq-tab {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    border-bottom: 1px solid transparent;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &.lsq-tabs_line {
+    .lsq-tab {
+      color: #b9e0fe;
+      margin-left: 12px;
+      &.lsq-tab_active {
+        color: #1edaff;
+        border-bottom-color: #1edaff;
+      }
+    }
+  }
+
+  &.lsq-tabs_border-card {
+    .lsq-tab {
+      color: #00caf9;
+      padding: 0 16px;
+      border: 1px solid #00caf9;
+      border-left-width: 0;
+      display: flex;
+      align-items: center;
+      &:first-child {
+        border-left-width: 1px;
+      }
+      &.lsq-tab_active {
+        color: #05255f;
+        background: #00caf9;
+      }
+    }
+  }
+  &.lsq-tabs_card {
+    .lsq-tab {
+      padding: 0 48px;
+      justify-content: center;
+      height: 48px;
+      min-width: 190px;
+      background: url('./assets/cardBac.png') no-repeat;
+      background-size: 100% 100%;
+      margin-left: 24px;
+      .lsq-tab-text {
+        transform: translateY(-7%);
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &.lsq-tab_active {
+        background: url('./assets/cardLsqtiveBac.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
