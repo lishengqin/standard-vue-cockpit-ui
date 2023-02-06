@@ -1,1 +1,0 @@
-import{_ as e,o,c as n,b as t}from"./index-3d21079a.js";const c={},s=t("p",null,"抱歉哈各位，组件还在开发中，暂时不可使用，上线了会通知的哦，先自行封装组件吧。",-1),_=[s];function r(a,l){return o(),n("div",null,_)}const i=e(c,[["render",r]]);export{i as default};

@@ -1,0 +1,1 @@
+import{_ as o,r as t,o as s,$ as c,a0 as a,b as n}from"./index-a3925d09.js";const r={},_=n("div",null,"我是内容",-1);function l(d,i){const e=t("LsqModuleBlock");return s(),c(e,{title:"标题",height:"200px"},{default:a(()=>[_]),_:1})}const p=o(r,[["render",l]]);export{p as default};
