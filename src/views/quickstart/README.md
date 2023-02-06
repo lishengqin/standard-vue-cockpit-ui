@@ -13,7 +13,7 @@ createApp(App).use(CockpitUI);
 ### 按需引入
 
 ```js
-import { AcButton, AcModuleBlock } from '@anchu/standard-vue-cockpit-components';
+import { LsqButton, LsqModuleBlock } from '@anchu/standard-vue-cockpit-components';
 import '@anchu/standard-vue-cockpit-components/lib/style.css';
-createApp(App).use(AcButton).use(AcModuleBlock);
+createApp(App).use(LsqButton).use(LsqModuleBlock);
 ```

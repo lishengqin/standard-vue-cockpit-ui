@@ -42,7 +42,7 @@ const options = computed(() => {
 
   return list.map(one => {
     let text = one.name;
-    if (one.name.indexOf('ac-') === 0) {
+    if (one.name.indexOf('lsq-') === 0) {
       text = one.name.replace(/-(\w)/g, (_, c) => c.toUpperCase());
       text = text.substr(0, 1).toUpperCase() + text.substr(1);
     }
