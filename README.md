@@ -2,7 +2,7 @@
 
 从 0 到 1 开发一个自定义的 ui 库，并实现按需引入和完整引入 2 种引入模式。
 
-[组件文档系统访问](https://lishengqin.github.io/standard-vue-cockpit-ui/)
+<a href="https://lishengqin.github.io/standard-vue-cockpit-ui/" target="_blank">组件文档系统访问</a>
 
 目录结构：
 
