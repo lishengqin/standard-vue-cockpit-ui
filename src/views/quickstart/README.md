@@ -1,19 +1,19 @@
 # 组件快速上手
 
-引入 `@anchu/standard-vue-cockpit-components` 组件，有按需引入和完整引入 2 种方式。
+引入 `standard-vue-cockpit-ui` 组件，有按需引入和完整引入 2 种方式。
 
 ### 完整引入
 
 ```js
-import CockpitUI from '@anchu/standard-vue-cockpit-components';
-import '@anchu/standard-vue-cockpit-components/lib/style.css';
+import CockpitUI from 'standard-vue-cockpit-ui';
+import 'standard-vue-cockpit-ui/lib/style.css';
 createApp(App).use(CockpitUI);
 ```
 
 ### 按需引入
 
 ```js
-import { LsqButton, LsqModuleBlock } from '@anchu/standard-vue-cockpit-components';
-import '@anchu/standard-vue-cockpit-components/lib/style.css';
+import { LsqButton, LsqModuleBlock } from 'standard-vue-cockpit-ui';
+import 'standard-vue-cockpit-ui/lib/style.css';
 createApp(App).use(LsqButton).use(LsqModuleBlock);
 ```

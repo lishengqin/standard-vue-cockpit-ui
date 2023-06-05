@@ -13,7 +13,7 @@
 <script setup>
 import layout from './layout';
 import { onMounted } from 'vue';
-import { usePageScale } from '@anchu/standard-vue-cockpit-components';
+import { usePageScale } from 'standard-vue-cockpit-ui';
 const myRef = ref('');
 onMounted(() => {
   usePageScale(myRef.value, 1920, 1080);
