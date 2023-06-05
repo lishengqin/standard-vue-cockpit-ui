@@ -1,1 +1,0 @@
-import{n as t,r as n,o as r,$ as u}from"./index-a3925d09.js";const b={__name:"basic",setup(c){const e=t("one"),o=[{label:"页切1",value:"one"},{label:"页切2",value:"two"},{label:"页切3",value:"three"}];return(m,a)=>{const l=n("LsqTabs");return r(),u(l,{modelValue:e.value,"onUpdate:modelValue":a[0]||(a[0]=s=>e.value=s),tabs:o},null,8,["modelValue"])}}};export{b as default};
